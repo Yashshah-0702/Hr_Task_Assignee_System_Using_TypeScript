@@ -1,13 +1,13 @@
 const student = [{ "name": "Yash Shah", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "Indus University", "result": "Pass" },
-{ "name": "Parv Gajipara", "number": 9780234567, "city": "Junagadh", "field": ".Net", "Colledge": "Indus University", "result": "Pass" },
-{ "name": "Vikas Sonwane", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "Indus University", "result": "Pass" },
-{ "name": "Harsh Shah", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "Indus University", "result": "Pass" },
+{ "name": "Parv Gajipara", "number": 9780234567, "city": "Junagadh", "field": ".Net", "Colledge": "GIT University", "result": "Pass" },
+{ "name": "Vikas Sonwane", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "GEC University", "result": "Pass" },
+{ "name": "Harsh Shah", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "GIDC University", "result": "Pass" },
 { "name": "Mihir Nirmal", "number": 9780234567, "city": "Rajkot", "field": "React", "Colledge": "Ahmedabad University", "result": "Pass" },
-{ "name": "Nitish Tiwari", "number": 9780234567, "city": "Ahmedabad", "field": "React", "Colledge": "Indus University", "result": "Fail" },
-{ "name": "Vandit Vora", "number": 9780234567, "city": "Ahmedabad", "field": "Python", "Colledge": "Indus University", "result": "Fail" },
-{ "name": "Meet Shah", "number": 9780234567, "city": "Ahmedabad", "field": "Python", "Colledge": "Indus University", "result": "Pass" },
-{ "name": "Jay Prajapati", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "Vishwakarma Engineering Colledge", "result": "Pass" },
-{ "name": "Mit Shah", "number": 9780234567, "city": "Ahmedabad", "field": "React", "Colledge": "Indus University", "result": "Fail" },
+{ "name": "Nitish Tiwari", "number": 9780234567, "city": "Ahmedabad", "field": "React", "Colledge": "LD Colledge ", "result": "Fail" },
+{ "name": "Vandit Vora", "number": 9780234567, "city": "Ahmedabad", "field": "Python", "Colledge": "PDPU University", "result": "Fail" },
+{ "name": "Meet Shah", "number": 9780234567, "city": "Ahmedabad", "field": "Python", "Colledge": "DAIICT University", "result": "Pass" },
+{ "name": "Jay Prajapati", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "VGEC Colledge", "result": "Pass" },
+{ "name": "Mit Shah", "number": 9780234567, "city": "Ahmedabad", "field": "React", "Colledge": "Nirma University", "result": "Fail" },
 { "name": "Nihar Talaviya", "number": 9780234567, "city": "Ahmedabad", "field": "React", "Colledge": "Indus University", "result": "Fail" }]
 
 
