@@ -17,7 +17,7 @@ for (let i = 0; i < student.length; i++) {
     var table4 = document.getElementById("data4")!
 
     table2.innerHTML += `<tr><td>${i}</td><td>${student[i].name}</td><td>${student[i].number}</td><td>${student[i].city}</td><td>${student[i].field}</td><td>${student[i].Colledge}</td></tr>`
-    table3.innerHTML += `<tr><td>${i}</td><td>${student[i].name}</td><td>${student[i].field}</td><td>${student[i].Colledge}</td><td id="schedule123${i}"><button class="btn btn-primary" data-bs-toggle="modal" id="schedule123${i}" data-bs-target="#schedule">Schedule</button></td></tr>`
+    table3.innerHTML += `<tr><td>${i}</td><td>${student[i].name}</td><td>${student[i].field}</td><td>${student[i].Colledge}</td><td><input type="datetime-local" id="dt${i}" class="form-control"></td><td><button class="btn btn-primary" id="schedule123${i}" onclick="schedule(${i})" data-bs-target="#schedule">Schedule</button></td></tr>`
     table4.innerHTML += `<tr><td>${i}</td><td>${student[i].name}</td><td>${student[i].field}</td><td>${student[i].Colledge}</td><td class="color">${student[i].result}</td><td><button id="hire${i}" class="btn btn-primary" onclick="hire(${i})">Hire</button></td></tr>`
 
 }
@@ -31,9 +31,9 @@ function save() {
     var experience = document.getElementById("experience")! as HTMLInputElement
     var qual = document.getElementById("qualification")! as HTMLInputElement
     document.getElementById("data1")!.innerHTML += `<tr><td>${id2.value}</td><td>${dep.value}</td><td>${qual.value}</td><td>${experience.value}</td><td>${vac.value}</td></tr>`
-    dep.innerHTML = "plz enter field"
-    vac.innerHTML = ' '
-    qual.innerHTML = ' '
+    // dep.innerHTML = "plz enter field"
+    // vac.innerHTML = ' '
+    // qual.innerHTML = ' '
 }
 function filter() {
     var student21 = student.filter((p) => {
@@ -51,14 +51,12 @@ function hire(i) {
     hire1.innerHTML = "Hired"
 }
 
-function DateTime(i){
-    i = `${i}`
-    var time = document.getElementById("time")! as HTMLInputElement
-    var date = document.getElementById("date")! as HTMLInputElement
+function schedule(i){
+    // var time = document.getElementById("time")! as HTMLInputElement
+    var date = document.getElementById(`dt${i}`)! as HTMLInputElement
+    // console.log(date.value)
     var button = document.getElementById(`schedule123${i}`) as HTMLInputElement
-   alert(`Inteerview Scheduled on ${date.value} at ${time.value}`)
-   
-   
+    button.innerHTML=`Scheduled on ${date.value}`
 }
 
 // function schedule(i){

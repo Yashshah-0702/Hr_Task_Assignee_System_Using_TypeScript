@@ -14,7 +14,7 @@ for (var i = 0; i < student.length; i++) {
     var table3 = document.getElementById("data3");
     var table4 = document.getElementById("data4");
     table2.innerHTML += "<tr><td>".concat(i, "</td><td>").concat(student[i].name, "</td><td>").concat(student[i].number, "</td><td>").concat(student[i].city, "</td><td>").concat(student[i].field, "</td><td>").concat(student[i].Colledge, "</td></tr>");
-    table3.innerHTML += "<tr><td>".concat(i, "</td><td>").concat(student[i].name, "</td><td>").concat(student[i].field, "</td><td>").concat(student[i].Colledge, "</td><td id=\"schedule123").concat(i, "\"><button class=\"btn btn-primary\" data-bs-toggle=\"modal\" id=\"schedule123").concat(i, "\" data-bs-target=\"#schedule\">Schedule</button></td></tr>");
+    table3.innerHTML += "<tr><td>".concat(i, "</td><td>").concat(student[i].name, "</td><td>").concat(student[i].field, "</td><td>").concat(student[i].Colledge, "</td><td><input type=\"datetime-local\" id=\"dt").concat(i, "\" class=\"form-control\"></td><td><button class=\"btn btn-primary\" id=\"schedule123").concat(i, "\" onclick=\"schedule(").concat(i, ")\" data-bs-target=\"#schedule\">Schedule</button></td></tr>");
     table4.innerHTML += "<tr><td>".concat(i, "</td><td>").concat(student[i].name, "</td><td>").concat(student[i].field, "</td><td>").concat(student[i].Colledge, "</td><td class=\"color\">").concat(student[i].result, "</td><td><button id=\"hire").concat(i, "\" class=\"btn btn-primary\" onclick=\"hire(").concat(i, ")\">Hire</button></td></tr>");
 }
 function save() {
@@ -24,9 +24,9 @@ function save() {
     var experience = document.getElementById("experience");
     var qual = document.getElementById("qualification");
     document.getElementById("data1").innerHTML += "<tr><td>".concat(id2.value, "</td><td>").concat(dep.value, "</td><td>").concat(qual.value, "</td><td>").concat(experience.value, "</td><td>").concat(vac.value, "</td></tr>");
-    dep.innerHTML = "plz enter field";
-    vac.innerHTML = ' ';
-    qual.innerHTML = ' ';
+    // dep.innerHTML = "plz enter field"
+    // vac.innerHTML = ' '
+    // qual.innerHTML = ' '
 }
 function filter() {
     var student21 = student.filter(function (p) {
@@ -43,12 +43,12 @@ function hire(i) {
     alert("Congratulations, ".concat(student[i].name, " is hired"));
     hire1.innerHTML = "Hired";
 }
-function DateTime(i) {
-    i = "".concat(i);
-    var time = document.getElementById("time");
-    var date = document.getElementById("date");
+function schedule(i) {
+    // var time = document.getElementById("time")! as HTMLInputElement
+    var date = document.getElementById("dt".concat(i));
+    // console.log(date.value)
     var button = document.getElementById("schedule123".concat(i));
-    alert("Inteerview Scheduled on ".concat(date.value, " at ").concat(time.value));
+    button.innerHTML = "Scheduled on ".concat(date.value);
 }
 // function schedule(i){
 //     alert(`<input type="text"/>`)
