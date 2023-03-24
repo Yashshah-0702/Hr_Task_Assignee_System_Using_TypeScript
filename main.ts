@@ -1,14 +1,14 @@
-const student = [{ "name": "Yash Shah", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "Indus University", "result": "Pass" },
-{ "name": "Parv Gajipara", "number": 9780234567, "city": "Junagadh", "field": ".Net", "Colledge": "GIT University", "result": "Pass" },
+const student = [{ "name": "Yash Shah", "number": 9780234567, "city": "Ahmedabad", "field": "React JS", "Colledge": "Indus University", "result": "Pass" },
+{ "name": "Parv Gajipara", "number": 9780234567, "city": "Junagadh", "field": "Angular JS", "Colledge": "GIT University", "result": "Pass" },
 { "name": "Vikas Sonwane", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "GEC University", "result": "Pass" },
-{ "name": "Harsh Shah", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "GIDC University", "result": "Pass" },
-{ "name": "Mihir Nirmal", "number": 9780234567, "city": "Rajkot", "field": "React", "Colledge": "Ahmedabad University", "result": "Pass" },
-{ "name": "Nitish Tiwari", "number": 9780234567, "city": "Ahmedabad", "field": "React", "Colledge": "LD Colledge ", "result": "Fail" },
-{ "name": "Vandit Vora", "number": 9780234567, "city": "Ahmedabad", "field": "Python", "Colledge": "PDPU University", "result": "Fail" },
+{ "name": "Harsh Shah", "number": 9780234567, "city": "Ahmedabad", "field": "Node JS", "Colledge": "GIDC University", "result": "Pass" },
+{ "name": "Mihir Nirmal", "number": 9780234567, "city": "Rajkot", "field": "React JS", "Colledge": "Ahmedabad University", "result": "Pass" },
+{ "name": "Nitish Tiwari", "number": 9780234567, "city": "Ahmedabad", "field": "React JS", "Colledge": "LD Colledge ", "result": "Fail" },
+{ "name": "Vandit Vora", "number": 9780234567, "city": "Ahmedabad", "field": "PHP", "Colledge": "PDPU University", "result": "Fail" },
 { "name": "Meet Shah", "number": 9780234567, "city": "Ahmedabad", "field": "Python", "Colledge": "DAIICT University", "result": "Pass" },
 { "name": "Jay Prajapati", "number": 9780234567, "city": "Ahmedabad", "field": ".Net", "Colledge": "VGEC Colledge", "result": "Pass" },
-{ "name": "Mit Shah", "number": 9780234567, "city": "Ahmedabad", "field": "React", "Colledge": "Nirma University", "result": "Fail" },
-{ "name": "Nihar Talaviya", "number": 9780234567, "city": "Ahmedabad", "field": "React", "Colledge": "Indus University", "result": "Fail" }]
+{ "name": "Mit Shah", "number": 9780234567, "city": "Ahmedabad", "field": "React JS", "Colledge": "Nirma University", "result": "Fail" },
+{ "name": "Nihar Talaviya", "number": 9780234567, "city": "Ahmedabad", "field": "React JS", "Colledge": "Indus University", "result": "Fail" }]
 
 
 for (let i = 0; i < student.length; i++) {
@@ -36,7 +36,6 @@ function filter() {
     var student21 = student.filter((p) => {
         return p.result == "Pass"
     })
-    console.log(student21)
     table4.innerHTML = ' '
     for (let i = 0; i < student21.length; i++) {
         table4.innerHTML += `<tr><td>${i}</td><td>${student21[i].name}</td><td>${student21[i].field}</td><td>${student21[i].Colledge}</td><td class="color">${student21[i].result}</td><td><button id="hire${i}" class="btn btn-primary" onclick="hire(${i})">Hire</button></td></tr>`
