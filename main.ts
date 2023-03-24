@@ -31,9 +31,6 @@ function save() {
     var experience = document.getElementById("experience")! as HTMLInputElement
     var qual = document.getElementById("qualification")! as HTMLInputElement
     document.getElementById("data1")!.innerHTML += `<tr><td>${id2.value}</td><td>${dep.value}</td><td>${qual.value}</td><td>${experience.value}</td><td>${vac.value}</td></tr>`
-    // dep.innerHTML = "plz enter field"
-    // vac.innerHTML = ' '
-    // qual.innerHTML = ' '
 }
 function filter() {
     var student21 = student.filter((p) => {
@@ -52,13 +49,9 @@ function hire(i) {
 }
 
 function schedule(i){
-    // var time = document.getElementById("time")! as HTMLInputElement
     var date = document.getElementById(`dt${i}`)! as HTMLInputElement
-    // console.log(date.value)
     var button = document.getElementById(`schedule123${i}`) as HTMLInputElement
     button.innerHTML=`Scheduled on ${date.value}`
 }
 
-// function schedule(i){
-//     alert(`<input type="text"/>`)
-// }
+

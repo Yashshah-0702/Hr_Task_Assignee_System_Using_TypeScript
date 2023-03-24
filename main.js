@@ -24,9 +24,6 @@ function save() {
     var experience = document.getElementById("experience");
     var qual = document.getElementById("qualification");
     document.getElementById("data1").innerHTML += "<tr><td>".concat(id2.value, "</td><td>").concat(dep.value, "</td><td>").concat(qual.value, "</td><td>").concat(experience.value, "</td><td>").concat(vac.value, "</td></tr>");
-    // dep.innerHTML = "plz enter field"
-    // vac.innerHTML = ' '
-    // qual.innerHTML = ' '
 }
 function filter() {
     var student21 = student.filter(function (p) {
@@ -44,12 +41,7 @@ function hire(i) {
     hire1.innerHTML = "Hired";
 }
 function schedule(i) {
-    // var time = document.getElementById("time")! as HTMLInputElement
     var date = document.getElementById("dt".concat(i));
-    // console.log(date.value)
     var button = document.getElementById("schedule123".concat(i));
     button.innerHTML = "Scheduled on ".concat(date.value);
 }
-// function schedule(i){
-//     alert(`<input type="text"/>`)
-// }
