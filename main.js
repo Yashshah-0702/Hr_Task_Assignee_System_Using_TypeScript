@@ -42,5 +42,5 @@ function hire(i) {
 function schedule(i) {
     var date = document.getElementById("dt".concat(i));
     var button = document.getElementById("schedule123".concat(i));
-    button.innerHTML = "Scheduled on ".concat(date.value);
+    button.innerHTML = "Scheduled Interview on ".concat(date.value);
 }

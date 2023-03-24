@@ -50,7 +50,7 @@ function hire(i) {
 function schedule(i){
     var date = document.getElementById(`dt${i}`)! as HTMLInputElement
     var button = document.getElementById(`schedule123${i}`) as HTMLInputElement
-    button.innerHTML=`Scheduled on ${date.value}`
+    button.innerHTML=`Scheduled Interview on ${date.value}`
 }
 
 
